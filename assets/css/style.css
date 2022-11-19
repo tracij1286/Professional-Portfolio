@@ -36,6 +36,7 @@ nav {
   text-decoration: underline;
 }
 
+/*navigation bar to the right*/
 nav a {
   color: #B56357;
   padding: 14px 20px;
@@ -43,6 +44,7 @@ nav a {
   text-align: end;
 }
 
+/*about me paragraph */
 .About-Me-Paragraph {
   margin-top: 20px;
   margin-right: 20px;
@@ -53,22 +55,35 @@ nav a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, ;
   background-color: #eae3ea;
   color: #b56357;
+
 }
 
+.selfie-photo {
+  width: 80px;
+  float: left;
+  border-style: solid;
+  border-color: #B4DBC0;
+}
+/*about me text*/
+.article h2 p {
+  float: left;
+  width: 70%;
+}
 
 main {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
 }
+/*boxes with links to external websites*/
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  
+  margin-bottom: 20px;
+  margin-right: 20px;
+
 }
 
 .projects .individualProject:first-child {
@@ -85,7 +100,7 @@ main {
 
 .individualProject h3 {
   background: #B56357;
-  color: white ;
+  color: white;
   padding: 5px;
   display: inline-block;
 
@@ -95,28 +110,31 @@ main {
 .projectOne {
   background-image: url("./assets/images/smallerheader.jpg");
   background-size: cover;
-  
+
 }
 
 .projectTwo {
   background-image: url("./assets/images/s-o-c-i-a-l-c-u-t-hwy3W3qFjgM-unsplash.jpg");
   background-size: cover;
-  
+
 }
+
 .projectThree {
   background-image: url("./assets/images/behnam-norouzi-IwSymbE3SGM-unsplash.jpg");
   background-size: cover;
 }
-.projectFour{
+
+.projectFour {
   background-image: url("./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg");
   background-size: cover;
 }
+
 .projectFive {
   background-image: url("./assets/images/hello-i-m-nik-I-ZZuLNxGfY-unsplash.jpg");
   background-size: cover;
 }
 
-
+/*side bar*/
 aside {
   flex: 1;
   background-color: #A7B3A5;
@@ -130,7 +148,7 @@ aside {
 
 
 footer {
-  flex:1 100%; 
+  flex: 1 100%;
   width: 100%;
   bottom: 0;
   padding: 5px;
@@ -142,26 +160,40 @@ footer {
 
 }
 
-a:hover ,h3:hover {
+/*boxes*/
+a:hover,
+h3:hover {
   color: #B4DBC0;
 }
 
-.projectOne:hover{
-    box-shadow: 0 0 15px #B4DBC0;
-}
-.projectTwo:hover{
-  box-shadow: 0 0 15px #B4DBC0;
-}
-.projectThree:hover{
-  box-shadow: 0 0 15px #B4DBC0;
-}
-.projectFour:hover{
-  box-shadow: 0 0 15px #B4DBC0;
-}
-.projectFive:hover{
+.projectOne:hover {
   box-shadow: 0 0 15px #B4DBC0;
 }
 
+.projectTwo:hover {
+  box-shadow: 0 0 15px #B4DBC0;
+}
+
+.projectThree:hover {
+  box-shadow: 0 0 15px #B4DBC0;
+}
+
+.projectFour:hover {
+  box-shadow: 0 0 15px #B4DBC0;
+}
+
+.projectFive:hover {
+  box-shadow: 0 0 15px #B4DBC0;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+/*on screen 768px */
 @media screen and (max-width: 768px) {
 
   main,
@@ -187,4 +219,5 @@ a:hover ,h3:hover {
   header {
     background: #B4DBC0;
   }
+
 }
