@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Jazmin Johnson's Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class= “header-image”>
-          <h1>Jazmin Johnson</h1>
-          <p>
-            Professional Portfolio
-          </p>
-          <img src="./assets/images/smaller header.jpg" alt="header photo"
-      />
-    </div>
-    </header>
-    
 
-    <!-- Navbar -->
-    <nav>
-      <a href="#">About Me</a>
-      <a href="#">Work</a>
-      <a href="#">Contact Me</a>
-      <a href="#">More</a>
-    </nav>
+<head>
+  <title>Jazmin Johnson's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
 
-    <!-- Body -->
-    <main>
-      <!-- Sidebar -->
-      <aside>
-        <h2><b>About Me</b></h2>
-        <h2><b>Work</b></h2>
-          </aside>
+<style>
+  .projectOne {
+    background-image: url("./assets/images/smallerheader.jpg");
+    background-size: cover;
 
-      <section class="content">
-        <article class="About-Me-Paragraph">
-          
-            <h2>About Me</h2>
-            <p>
-                My name is Jazmin Traci Johnson , my preferred name is Traci. I have a background in graphic design in film and television. I'm new to the world of web development but excited for the journey.
-        </article>
-      <!-- Product Cards -->
-      <content class="products">
-        <section class="card">
-          <a href="https://tracij1286.github.io/pre-work-study-guide/">
-          <img src="./assets/images/s-o-c-i-a-l-c-u-t-hwy3W3qFjgM-unsplash.jpg" alt="data pic" />
-          <p>Recipe Organizer</p></a>
-        </section>
-        <section class="card">
-          <a href="https://tracij1286.github.io/Homework-1/">
-          <img src="./assets/images/behnam-norouzi-IwSymbE3SGM-unsplash.jpg" alt="2nd data pic" />
-          <p>Daily Calander</p></a>
-        </section>
+  }
 
-        <section class="card">
-          <a href="https://tracij1286.github.io/git-init-sample/">
-          <img
-          src="./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg"
-            alt="computer and desk"
-          />
-          <p>Study Guide</p></a>
-        </section>
-        <section class="card">
+  .projectTwo {
+    background-image: url("./assets/images/s-o-c-i-a-l-c-u-t-hwy3W3qFjgM-unsplash.jpg");
+    background-size: cover;
+  }
 
-          <a href="https://tracij1286.github.io/pre-work-study-guide/">
-          <img
-            src="./assets/images/hello-i-m-nik-I-ZZuLNxGfY-unsplash.jpg"
-            alt="green data on the screen up close"
-          />
-          <p>Dating App</p></a>
+  .projectThree {
+    background-image: url("./assets/images/behnam-norouzi-IwSymbE3SGM-unsplash.jpg");
+    background-size: cover;
+  }
 
-        </section>
-      </content>
-    </main>
+  .projectFour {
+    background-image: url("./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg");
+    background-size: cover;
+  }
 
-     
+  .projectFive {
+    background-image: url("./assets/images/hello-i-m-nik-I-ZZuLNxGfY-unsplash.jpg");
+    background-size: cover;
+  }
+</style>
 
-    <!-- Footer -->
-    <footer>
-      <h3> 
+
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Jazmin Johnson</h1>
+    <p>
+      Professional Portfolio
+    </p>
+  </header>
+
+
+  <!-- Navbar -->
+  <nav>
+    <a href="https://tracij1286.github.io/git-init-sample/">About Me</a>
+    <a href="https://tracij1286.github.io/pre-work-study-guide/">Work</a>
+    <a href="https://tracij1286.github.io/Homework-1/">Contact Me</a>
+    <a href="https://tracij1286.github.io/pre-work-study-guide/">More</a>
+  </nav>
+
+
+  <main>
+    <!-- Sidebar -->
+    <aside>
+
+      <h2><b>About Me</b></h2>
+      <h2><b>Work</b></h2>
+    </aside>
+
+    <!--About Me Paragraph-->
+    <section class="content">
+      <article class="About-Me-Paragraph">
+
+        <h2>About Me</h2>
+        <p>
+          My name is Jazmin Traci Johnson , my preferred name is Traci. I have a background in graphic design in film
+          and television. I'm new to the world of web development but excited for the journey.
+      </article>
+
+      <section>
+        <div class="projects">
+          <a href="https://www.google.com" class="individualProject projectOne">
+
+            <h3>Data Log</h3>
+
+          </a>
+          <a href="https://tracij1286.github.io/pre-work-study-guide/" class="individualProject projectTwo">
+
+            <h3>Math Game</h3>
+
+          </a>
+          <a href="https://tracij1286.github.io/Homework-1/" class="individualProject projectThree">
+
+            <h3>Calculator</h3>
+
+          </a>
+          <a href="https://tracij1286.github.io/git-init-sample/" class="individualProject projectFour">
+
+            <h3>Smart Phone App</h3>
+
+          </a>
+          <a href="https://tracij1286.github.io/pre-work-study-guide/" class="individualProject projectFive">
+
+            <h3>Calander</h3>
+
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <a href="#">Contact-Me</a>
         <a href="#">804-295-3863</a>
         <a href="#">tracij50@gmail.com</a>
-        <a href="#">github.com</a>
-      </h3>
-    </footer>
-  </body>
+        <a href="./assets/images/hello-i-m-nik-I-ZZuLNxGfY-unsplash.jpg">github.com</a>
+
+      </footer>
+</body>
+
 </html>
-
-
-

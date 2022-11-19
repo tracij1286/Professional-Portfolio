@@ -1,175 +1,190 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-  }
-  
-  .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-  }
-  header {
-    padding: 20px;
-    text-align: start;
-    background: #B56357;
-    color: #fff;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Gill Sans, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.content {
+  width: 80%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header {
+  padding: 20px;
+  text-align: start;
+  background: #B56357;
+  color: #fff;
+}
+
+/* Placed "Professional Portfolio" to the right of the page*/
+header p {
+  text-align: end;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  background-color: #EAE3EA;
+  text-decoration: underline;
+}
+
+nav a {
+  color: #B56357;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: end;
+}
+
+.About-Me-Paragraph {
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 50px;
+  border-style: solid;
+  border-color: #B4DBC0;
+  border-width: 3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, ;
+  background-color: #eae3ea;
+  color: #b56357;
+}
 
 
-  }
-  
-    
-  .header-image {
-    background-image: url(“smaller-header.jpg);
-    background-position: center;
-    width: 100%;
-    height: 0;
-    padding: 0 0 40%;
-    border: 1px solid;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-  nav {
-    display: flex;
-    justify-content: end;
-    background-color: #EAE3EA;
-    text-decoration: underline;
-  }
-  
-  nav a {
-    color: #B56357;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: end;
-  }
-  .div {
-    color: #B56357;
-    padding: 14px 20px;
-    text-align: center;
-  }
-  .About-Me-Paragraph {
-    margin-top: 20px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 20px;
-    padding: 50px;
-    border-style: solid;
-    border-color: #B4DBC0;
-    border-width: 3px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #eae3ea;
-    color: #b56357;
-  }
   
+}
 
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
-  
-  aside {
-    flex: 1;
-    background-color: #A7B3A5;
-    text-align: center;
-    line-height: 180px;
-    border-right-style: solid;
-    border-color: black;
-    border-width: 5px;
-  }
-  
+.projects .individualProject:first-child {
+  flex: 0 0 100%;
+}
 
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 5px;
-    text-align: center;
-    background: #B56357;
-    color: #fff;
-    margin-top: auto;
-    word-spacing: 30px;
-  }
-  .products {
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  
-  /* Added rotation, box-shadow, border-radius */
-  .card {
-    border-style: solid;
-    border-color: #B4DBC0;
-    border-width: 3px;
-    border-radius: none;
-    padding: 10px;
-    flex: 0 0 300px;
-    box-shadow: 10px 10px 5px #A7B3A5;
-    margin: 20px;
-  }
-  
-  /* Added padding to match the card */
-  .card header {
+.individualProject {
+  border: #B4DBC0 2px solid;
+  min-height: 180px;
+  max-height: 180px;
+  margin: 3px;
+  flex: 0 0 49%
+}
 
-    padding: 20px;
-  }
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(18, 193, 108, 0.2);
-  }
-  img {
-    border: 3px solid #B4DBC0;
-  }
-  .card p {
-    text-align: center;
-  }
+.individualProject h3 {
+  background: #B56357;
+  color: white ;
+  padding: 5px;
+  display: inline-block;
+
+  margin-top: 120px;
+}
+
+.projectOne {
+  background-image: url("./assets/images/smallerheader.jpg");
+  background-size: cover;
   
-  .card img {
-    width: 100%;
-  }
+}
+
+.projectTwo {
+  background-image: url("./assets/images/s-o-c-i-a-l-c-u-t-hwy3W3qFjgM-unsplash.jpg");
+  background-size: cover;
   
-  a:hover {
-    color: #B4DBC0;
-    background-color: transparent;
-    text-decoration: underline;
+}
+.projectThree {
+  background-image: url("./assets/images/behnam-norouzi-IwSymbE3SGM-unsplash.jpg");
+  background-size: cover;
+}
+.projectFour{
+  background-image: url("./assets/images/firmbee-com-gcsNOsPEXfs-unsplash.jpg");
+  background-size: cover;
+}
+.projectFive {
+  background-image: url("./assets/images/hello-i-m-nik-I-ZZuLNxGfY-unsplash.jpg");
+  background-size: cover;
+}
+
+
+aside {
+  flex: 1;
+  background-color: #A7B3A5;
+  text-align: center;
+  line-height: 180px;
+  border-right-style: solid;
+  border-color: #b56357;
+  border-width: 5px;
+  color: #eae3ea;
+}
+
+
+footer {
+  flex:1 100%; 
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+  text-align: center;
+  background: #B56357;
+  color: #fff;
+  margin-top: auto;
+  word-spacing: 30px;
+
+}
+
+a:hover ,h3:hover {
+  color: #B4DBC0;
+}
+
+.projectOne:hover{
+    box-shadow: 0 0 15px #B4DBC0;
+}
+.projectTwo:hover{
+  box-shadow: 0 0 15px #B4DBC0;
+}
+.projectThree:hover{
+  box-shadow: 0 0 15px #B4DBC0;
+}
+.projectFour:hover{
+  box-shadow: 0 0 15px #B4DBC0;
+}
+.projectFive:hover{
+  box-shadow: 0 0 15px #B4DBC0;
+}
+
+@media screen and (max-width: 768px) {
+
+  main,
+  nav {
+    flex-direction: column;
   }
-  
- 
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-  /* Cards are split into two columns at 992px or smaller */
+}
+
+/* 992px or smaller */
 @media screen and (max-width: 992px) {
-  .card {
+  .projects {
     width: 50%;
   }
 }
 
-/* Cards are stacked on top of each other at 768px or smaller */
+/* Images are stacked at 768px or smaller */
 @media screen and (max-width: 768px) {
-  .card {
+  .projects {
     width: 100%;
   }
+
   /* Change the header color */
   header {
-    background: #B4DBC0 ;
+    background: #B4DBC0;
   }
 }
-  
-
-  
